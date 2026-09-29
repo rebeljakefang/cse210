@@ -16,6 +16,9 @@ class Program
     }
     static void Main(string[] args)
     {
-        
+        string MyName = names();
+        DisplayGreeting(MyName);
+        double total = AddNumbers(12.234, 20);
+        Console.WriteLine(total);
     }
 }
