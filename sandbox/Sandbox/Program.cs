@@ -2,23 +2,23 @@ using System;
 
 class Program
 {
-    static double Add Numbers(double x, int y)
+    
+   static void Main(string[] args)
+   {
+    Console.Write("What is your height? ");
+    string height = Console.ReadLine();
+    int number = int.Parse(height);
+    if (number < 48)
     {
-        return x + y;
-    }
-    static string MyName()
-    {
-        return "bob";
-    }
-    static void DisplayGreeting(string name)
-    {
-        console.WriteLine($"Welcome {name}, its nice to meet you");
-    }
-    static void Main(string[] args)
-    {
-        string MyName = names();
-        DisplayGreeting(MyName);
-        double total = AddNumbers(12.234, 20);
-        Console.WriteLine(total);
+        Console.WriteLine("You are to short");
+    } 
+    if (number > 72)
+        {
+            Console.WriteLine("you are too tall");
+        }
+    else
+        {
+            Console.WriteLine("you are the perfect height");
+        }
     }
 }
