@@ -1,6 +1,6 @@
 class Menu
 {
-    public void ProcessMenu()
+    public int ProcessMenu()
     {
         Console.WriteLine("In the menu class");
         int input = 0;
@@ -14,7 +14,7 @@ class Menu
            Console.WriteLine("4. read jornal to a file");
            Console.WriteLine("5. quit");
            Console.WriteLine(">");
-           input = int.parse(console.readLine()); 
+           input = int.Parse(Console.ReadLine()); 
         }
         return input;
     }
