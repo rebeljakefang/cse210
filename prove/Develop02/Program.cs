@@ -6,7 +6,12 @@ class Program
     {
         Menu myMenu = new Menu();
 
+        JournalEntry myEntry = new JournalEntry();
+
+        Journal myJournal = new Journal();
+
         myMenu.ProcessMenu();
+
         int response = myMenu.ProcessMenu();
         while (response != 5)
         {
@@ -14,9 +19,11 @@ class Program
         {
             case 1:
             Console.WriteLine("Create");
+            myEntry.CreateJournalEntry();
             break;
             case 2:
             Console.WriteLine("Display");
+            myEntry.CreateJournalEntry();
             break;
             case 3:
             Console.WriteLine("save");
@@ -24,6 +31,7 @@ class Program
             case 4:
             Console.WriteLine("Write");
             break;
-        }}
+        }
+        }
     }
 }
